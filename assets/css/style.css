@@ -1,0 +1,328 @@
+body {
+  background-color: #f5f5f5;
+}
+
+/********************************** start nav ************************************/
+
+.navbar {
+  background-color: #040404;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+
+}
+.nav-link::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.25s ease-out;
+}
+
+.nav-link:hover::before{
+  width: 75%;
+}
+
+.navbar .navbar-toggler-icon {
+  color: white;
+  border-color: white;
+}
+
+/*********************************** end nav **************************************/
+/********************************** start landing ************************************/
+
+.landing {
+  background: url(../images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+
+.landing h1 {
+  font-size: 72px;
+  font-weight: 600;
+}
+
+/********************************** end landing ************************************/
+
+/********************************* start about **********************************/
+
+
+
+.box-shadow {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.span .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.paragraph .about {
+  padding-bottom: 4px;
+  border-bottom: 3px solid #0078ff;
+}
+
+/********************************* end about ***********************************/
+/****************************** start services **********************************/
+.services .line {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+}
+
+.services .f-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services .animate {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #0078ff;
+  transition: all 500ms ease;
+}
+
+.services .descripe {
+  background-color: white;
+  transition: all 500ms ease;
+}
+
+.services .descripe:hover .animate {
+  background-color: #0078ff;
+  border-color: rgba(253, 252, 220, .8);
+  color: white;
+}
+
+
+.descripe h3 {
+  text-transform: uppercase;
+}
+
+/******************************* end services **********************************/
+/******************************* start count **********************************/
+.count {
+  color: white;
+  background-image: url(../images/count-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+
+.count .overlay {
+  background-color: rgba(0, 116, 248, 0.7);
+}
+
+.count .number-icon {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #CDE1F8;
+}
+
+/******************************* end count **********************************/
+/******************************* start Portfolio **********************************/
+.Portfolio .f-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.Portfolio .line {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+}
+
+.Portfolio .card:hover img {
+  transform: scale(1.5);
+}
+
+.Portfolio .card-img {
+  overflow: hidden;
+}
+
+.Portfolio .card-img img {
+  transition: all 1s;
+}
+
+.card-text {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.card-s {
+  font-size: 13px;
+  font-weight: 400;
+  color: #646464;
+}
+
+.Portfolio-span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #0078ff;
+}
+
+.fa-circle-plus {
+  font-size: 40px;
+  color: #0078ff;
+}
+
+/******************************* end Portfolio **********************************/
+/******************************* start slider **********************************/
+.carousal-body {
+  background-image: url(../images/slider.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.carousal-body .carousal-layer {
+  background-color: rgba(0, 116, 248, 0.7);
+  width: 100%;
+  padding: 130px;
+}
+
+.redius {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+}
+
+/******************************* end slider **********************************/
+/*********************************** start blog ******************************/
+.blog .f-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.blog .line {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+}
+
+.blog-item {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blog-content a {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.blog-content a:hover {
+  color: #0078ff;
+}
+
+.blog-content .blog-word {
+  transform: translate(150%, -150%);
+  text-transform: uppercase;
+}
+
+.blog-content .blog-word .bg-icon {
+  background-color: #0078ff;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 10px 1px;
+}
+
+.blog-footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.blog-footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #cccccc;
+}
+
+.blog-footer-img a {
+  color: black;
+}
+
+.blog-footer-img a:hover {
+  transition: all 0.5s;
+  color: #0078ff;
+}
+
+/*********************************** end blog ******************************/
+/*********************************** start contact ******************************/
+.contact {
+  background-image: url(../images/slider.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.contact-body {
+  background-color: rgba(0, 116, 248, 0.7);
+}
+
+.contact .for-line {
+  border-bottom: 3px solid #0078ff;
+  padding-bottom: 6px;
+}
+
+.social-icons .l-icons a {
+  color: black;
+}
+
+.social-icons .l-icons {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #0078ff;
+  border-radius: 50%;
+}
+
+.social-icons .l-icons:hover {
+  background-color: #0078ff;
+  transition: all 500ms ease;
+  border-color: rgba(253, 252, 220, .8);
+  color: white;
+}
+
+.social-icons .l-icons:hover a {
+  color: white;
+}
+
+.l-icons .con-ico {
+  color: #0078ff;
+}
+
+.copy-right {
+  background-color: #0062d3;
+}
+
+/**************************** the end **************************/
